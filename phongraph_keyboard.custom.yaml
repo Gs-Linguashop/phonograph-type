@@ -1,0 +1,765 @@
+customKeyStyles: {}
+keyboards:
+  - name: 形聲鍵盤
+    isPrimary: true
+    rows:
+      - keys:
+          - action:
+              character:
+                char: q
+            width:
+              percentage: 0.1
+            label: 隹
+            swipe:
+              - action:
+                  character:
+                    char: "1"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: ！
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: Q
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: Q
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: w
+            width:
+              percentage: 0.1
+            label: 戈
+            swipe:
+              - action:
+                  character:
+                    char: "2"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "@"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: W
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: W
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: e
+            width:
+              percentage: 0.1
+            label: 水
+            swipe:
+              - action:
+                  character:
+                    char: "3"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "#"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: E
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: E
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: r
+            width:
+              percentage: 0.1
+            label: 人
+            swipe:
+              - action:
+                  character:
+                    char: "4"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: $
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: R
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: R
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: t
+            width:
+              percentage: 0.1
+            label: 卩
+            swipe:
+              - action:
+                  character:
+                    char: "5"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "%"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: T
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: T
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: y
+            width:
+              percentage: 0.1
+            label: 身
+            swipe:
+              - action:
+                  character:
+                    char: "6"
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: ^
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: Y
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: Y
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: u
+            width:
+              percentage: 0.1
+            label: 又
+            swipe:
+              - action:
+                  character:
+                    char: "7"
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "&"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: U
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: U
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: i
+            width:
+              percentage: 0.1
+            label: 一
+            swipe:
+              - action:
+                  character:
+                    char: "8"
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "*"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: I
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: I
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: o
+            width:
+              percentage: 0.1
+            label: 夕
+            swipe:
+              - action:
+                  character:
+                    char: "9"
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: （
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: O
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: O
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: p
+            width:
+              percentage: 0.1
+            label: 止
+            swipe:
+              - action:
+                  character:
+                    char: "0"
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: ）
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: P
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: P
+                display: false
+                processByRIME: true
+                direction: right
+      - keys:
+          - action: none
+            width:
+              percentage: 0.05
+          - action:
+              character:
+                char: a
+            width:
+              percentage: 0.1
+            label: 二
+            swipe:
+              - action:
+                  character:
+                    char: A
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: A
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: s
+            width:
+              percentage: 0.1
+            label: 三
+            swipe:
+              - action:
+                  character:
+                    char: S
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: S
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: d
+            width:
+              percentage: 0.1
+            label: 大
+            swipe:
+              - action:
+                  character:
+                    char: D
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: D
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: f
+            width:
+              percentage: 0.1
+            label: 勺
+            swipe:
+              - action:
+                  character:
+                    char: F
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: F
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: g
+            width:
+              percentage: 0.1
+            label: 王
+            swipe:
+              - action:
+                  character:
+                    char: "「"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "」"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: G
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: G
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: h
+            width:
+              percentage: 0.1
+            label: 屮
+            swipe:
+              - action:
+                  character:
+                    char: "-"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "_"
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: H
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: H
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: j
+            width:
+              percentage: 0.1
+            label: 田
+            swipe:
+              - action:
+                  character:
+                    char: "+"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "="
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: J
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: J
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: k
+            width:
+              percentage: 0.1
+            label: 口
+            swipe:
+              - action:
+                  character:
+                    char: ：
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: ；
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: K
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: K
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: l
+            width:
+              percentage: 0.1
+            label: 幺
+            swipe:
+              - action:
+                  character:
+                    char: “
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: ”
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: L
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: L
+                display: false
+                processByRIME: true
+                direction: right
+          - action: none
+            width:
+              percentage: 0.05
+      - keys:
+          - action:
+              character:
+                char: "`"
+            width:
+              percentage: 0.1
+            label: 查
+            processByRIME: true
+            callout:
+              - action:
+                  shortcutCommand: "#简繁切换"
+                label: 繁簡切換
+          - action:
+              character:
+                char: z
+            width:
+              percentage: 0.1
+            label: 車
+            swipe:
+              - action:
+                  character:
+                    char: Z
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: Z
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: x
+            width:
+              percentage: 0.1
+            label: 豸
+            swipe:
+              - action:
+                  character:
+                    char: X
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: X
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: c
+            width:
+              percentage: 0.1
+            label: 山
+            swipe:
+              - action:
+                  character:
+                    char: C
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: C
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: v
+            width:
+              percentage: 0.1
+            label: 皿
+            swipe:
+              - action:
+                  character:
+                    char: "、"
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: V
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: V
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: b
+            width:
+              percentage: 0.1
+            label: 木
+            swipe:
+              - action:
+                  character:
+                    char: ，
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: B
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: B
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: n
+            width:
+              percentage: 0.1
+            label: 入
+            swipe:
+              - action:
+                  character:
+                    char: 。
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: N
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: N
+                display: false
+                processByRIME: true
+                direction: right
+          - action:
+              character:
+                char: m
+            width:
+              percentage: 0.1
+            label: 冂
+            swipe:
+              - action:
+                  character:
+                    char: ？
+                display: false
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: /
+                display: false
+                processByRIME: false
+                direction: down
+              - action:
+                  character:
+                    char: M
+                display: false
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: M
+                display: false
+                processByRIME: true
+                direction: right
+          - action: backspace
+            width:
+              percentage: 0.2
+            swipe:
+              - direction: left
+                action: { shortcutCommand: "#重输" }
+      - keys:
+          - action:
+              keyboardType: numeric
+            width:
+              percentage: 0.25
+          - action: space
+            width:
+              percentage: 0.5
+            swipe:
+              - action:
+                  keyboardType: alphabetic
+                display: false
+                processByRIME: true
+                direction: up
+              - action: tab
+                display: true
+                processByRIME: true
+                direction: right
+            callout:
+              - action:
+                  shortcutCommand: "#方案切换"
+                label: 方案切換
+          - action: enter
+            width:
+              percentage: 0.25
+    buttonInsets:
+      left: 3
+      bottom: 4
+      top: 8
+      right: 3
