@@ -1,5 +1,6 @@
 from src_py.parse_encode import *
 from collections import defaultdict, Counter
+from src_radical.read_radicals import *
 
 class Char:
     def __init__(self, name, type = None, parent_name = None, parent_type = None):
@@ -114,7 +115,7 @@ read_dict(src_dir + 'phonograph_rare.txt', forest, dup_chars, mode = 'init')
 read_dict(src_dir + 'phonograph_hierarchy.txt', forest, dup_chars, mode = 'mod')
 
 decomp_dict = parse_decomposition_dict(src_encode_dir + "phonograph_dict.txt",src_encode_dir + "extra.txt")
-basic_dict = parse_decomposition_dict(src_encode_dir + "basic.txt",src_encode_dir + "extra.txt")
+basic_dict = parse_decomposition_dict(src_encode_dir + "keys.txt")
 key_dict = parse_key_dict(src_encode_dir + "basic.txt")
  
 with open(log_dir + 'dict_raw.txt',"w",encoding="utf8") as f:
@@ -133,7 +134,10 @@ substitute_and_write(log_dir + 'dict_raw.txt', log_dir + 'dict.txt', decomp_dict
 print("further decomposing...")
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', decomp_dict, ignore = key_dict)
 print("processing singlets...")
+radical_map = read_radicals('src_radical/radicals.json')
+add_radicals(log_dir + 'dict.txt', log_dir + 'dict.txt', radical_map, ignore = key_dict)
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', basic_dict, single_only = True)
+repeat_singlets(log_dir + 'dict.txt', log_dir + 'dict.txt')
 print("collecting keys...")
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', key_dict)
 print("done")

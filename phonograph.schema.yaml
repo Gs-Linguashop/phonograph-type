@@ -59,15 +59,11 @@ translator:
   enable_sentence: true
   enable_encoder: true
   encode_commit_history: true
-  max_phrase_length: 5
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
-    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|二木山大水勺王屮一田口幺冂入夕止隹人三卩又皿戈豸身車|"
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|二木入大水勺王屮一田口豸冂土夕止隹人三卩又皿戈幺身車|"
   comment_format:
-    - "xlit|abcdefghijklmnopqrstuvwxyz~|二木山大水勺王屮一田口幺冂入夕止隹人三卩又皿戈豸身車～|"
-  disable_user_dict_for_patterns:
-    - "^z.*$"
-    - "^yyy.*$"
+    - "xlit|abcdefghijklmnopqrstuvwxyz~|二木入大水勺王屮一田口豸冂土夕止隹人三卩又皿戈幺身車|"
 
 abc_segmentor:
   extra_tags:
@@ -83,7 +79,7 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   comment_format:
-    - "xlit|abcdefghijklmnopqrstuvwxyz|二木山大水勺王屮一田口幺冂入夕止隹人三卩又皿戈豸身車|"
+    - "xlit|abcdefghijklmnopqrstuvwxyz|二木入大水勺王屮一田口豸冂土夕止隹人三卩又皿戈幺身車|"
 
 simplifier:
   tips: all  # 簡化字模式下提示對應的傳統漢字

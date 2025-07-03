@@ -90,3 +90,34 @@ def substitute_and_write(input_file, output_file, subs_dict, ignore = None, sing
 	with open(output_file, 'w', encoding='utf8') as outfile:
 		for l in sorted_lines:
 			outfile.write(l + '\n')
+
+def add_radicals(input_file, output_file, radical_map, ignore = None):
+	if ignore is None: ignore = set()
+	result_lines = set()
+	with open(input_file, 'r', encoding='utf8') as infile:
+		for line in infile:
+			line = line.rstrip('\n')
+			char = line.split('\t')[0]
+			if char in ignore: continue
+			if char not in radical_map: continue
+			decomp = parse_string_to_radicals(line.split('\t')[1])
+			if len(decomp) == 1 and decomp[0] != char: decomp.append(radical_map[char])
+			result_lines.add(char + '\t' + ''.join(decomp))
+	sorted_lines = sorted(result_lines)
+	with open(output_file, 'w', encoding='utf8') as outfile:
+		for l in sorted_lines:
+			outfile.write(l + '\n')
+
+def repeat_singlets(input_file, output_file):
+	result_lines = set()
+	with open(input_file, 'r', encoding='utf8') as infile:
+		for line in infile:
+			line = line.rstrip('\n')
+			char = line.split('\t')[0]
+			decomp = parse_string_to_radicals(line.split('\t')[1])
+			if len(decomp) == 1: decomp.append(decomp[0])
+			result_lines.add(char + '\t' + ''.join(decomp))
+	sorted_lines = sorted(result_lines)
+	with open(output_file, 'w', encoding='utf8') as outfile:
+		for l in sorted_lines:
+			outfile.write(l + '\n')

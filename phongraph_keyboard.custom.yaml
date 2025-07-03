@@ -523,7 +523,7 @@ keyboards:
                 char: l
             width:
               percentage: 0.1
-            label: 幺
+            label: 豸
             swipe:
               - action:
                   character:
@@ -588,7 +588,7 @@ keyboards:
                 char: x
             width:
               percentage: 0.1
-            label: 豸
+            label: 幺
             swipe:
               - action:
                   character:
@@ -607,7 +607,7 @@ keyboards:
                 char: c
             width:
               percentage: 0.1
-            label: 山
+            label: 入
             swipe:
               - action:
                   character:
@@ -676,7 +676,7 @@ keyboards:
                 char: n
             width:
               percentage: 0.1
-            label: 入
+            label: 土
             swipe:
               - action:
                   character:
