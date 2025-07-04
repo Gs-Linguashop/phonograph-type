@@ -149,7 +149,7 @@ with open('src_radical/kangxi_radical_chars.txt', 'r', encoding='utf8') as f:
 from functools import partial
 radical_map = partial(get_kangxi_radical, kangxi_radicals)
 add_radicals(log_dir + 'dict.txt', log_dir + 'dict.txt', radical_map, ignore = decomp_dict)
-substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', basic_dict, single_only = True)
+substitute_and_write_singlets(log_dir + 'dict.txt', log_dir + 'dict.txt', basic_dict)
 # repeat_singlets(log_dir + 'dict.txt', log_dir + 'dict.txt')
 print("collecting keys...")
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', key_dict)

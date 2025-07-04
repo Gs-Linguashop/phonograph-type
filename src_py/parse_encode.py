@@ -101,6 +101,21 @@ def sub_decomps(decomp, subs_dict, ignore, cursor = 0):
 		return unique_return_list
 	return [decomp]  # If no substitutions were made, return the original decomposition
 
+def substitute_and_write_singlets(input_file, output_file, subs_dict):
+	result_lines = set()
+	with open(input_file, 'r', encoding='utf8') as infile:
+		for line in infile:
+			line = line.rstrip('\n')
+			decomp_raw = parse_string_to_radicals(line.split('\t')[1])
+			if len(decomp_raw) != 1: result_lines.add(line); continue
+			if decomp_raw[0] not in subs_dict: result_lines.add(line); continue
+			decomp_subs = subs_dict[decomp_raw[0]]
+			result_lines.update([line.split('\t')[0] + '\t' + ''.join(decomp) for decomp in decomp_subs])
+	sorted_lines = sorted(result_lines)
+	with open(output_file, 'w', encoding='utf8') as outfile:
+		for l in sorted_lines:
+			outfile.write(l + '\n')
+
 def add_radicals(input_file, output_file, radical_map, ignore = None):
 	if ignore is None: ignore = set()
 	result_lines = set()
