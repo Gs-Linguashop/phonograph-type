@@ -99,9 +99,9 @@ def add_radicals(input_file, output_file, radical_map, ignore = None):
 			line = line.rstrip('\n')
 			char = line.split('\t')[0]
 			if char in ignore: continue
-			if char not in radical_map: continue
+			if radical_map(char) is None: continue
 			decomp = parse_string_to_radicals(line.split('\t')[1])
-			if len(decomp) == 1 and decomp[0] != char: decomp.append(radical_map[char])
+			if len(decomp) == 1 and decomp[0] != char: decomp.append(radical_map(char))
 			result_lines.add(char + '\t' + ''.join(decomp))
 	sorted_lines = sorted(result_lines)
 	with open(output_file, 'w', encoding='utf8') as outfile:
