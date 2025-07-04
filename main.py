@@ -22,8 +22,20 @@ class Char:
     def find_decomposition(self, forest, decomp_dict):
         l = []
         if self.name in decomp_dict: l.extend(decomp_dict[self.name])
-        if self.parent_name is not None: l.extend(forest.dict[self.parent_name].find_decomposition(forest, decomp_dict))
-        return l
+        parent_l = []
+        if self.parent_name is not None: 
+            parent_l.extend(forest.dict[self.parent_name].find_decomposition(forest, decomp_dict))
+        parent_l, parent_all_len_one = remove_len_one_if_more_exist(parent_l)
+        l, _ = remove_len_one_if_more_exist(l)
+        if parent_all_len_one and len(l) >= 1: return l
+        return l + parent_l
+
+def remove_len_one_if_more_exist(ls):
+    new_ls = []
+    for l in ls:
+        if len(l) > 1: new_ls.append(l)
+    if len(new_ls) == 0: return ls, True # True for all len = 1
+    return new_ls, False
 
 class Forest:
     def __init__(self):
@@ -122,7 +134,7 @@ with open(log_dir + 'dict_raw.txt',"w",encoding="utf8") as f:
     for char in forest.dict:
         if char is None or forest.dict[char].type != 'reg': continue
         for decomp in forest.dict[char].find_decomposition(forest, decomp_dict):
-            f.writelines(char + '\t' + decomp + '\n')
+            f.writelines(char + '\t' + ''.join(decomp) + '\n')
 
 with open(log_dir + 'occurrence_raw.txt',"w",encoding="utf8") as f:
     occurrence = count_char_occurrences(log_dir + 'dict_raw.txt')
@@ -131,8 +143,6 @@ with open(log_dir + 'occurrence_raw.txt',"w",encoding="utf8") as f:
 
 print("decomposing...")
 substitute_and_write(log_dir + 'dict_raw.txt', log_dir + 'dict.txt', decomp_dict, ignore = key_dict)
-print("further decomposing...")
-substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', decomp_dict, ignore = key_dict)
 print("processing singlets...")
 with open('src_radical/kangxi_radical_chars.txt', 'r', encoding='utf8') as f:
     kangxi_radicals = list(f.read().replace('\n', ''))
@@ -140,7 +150,7 @@ from functools import partial
 radical_map = partial(get_kangxi_radical, kangxi_radicals)
 add_radicals(log_dir + 'dict.txt', log_dir + 'dict.txt', radical_map, ignore = decomp_dict)
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', basic_dict, single_only = True)
-repeat_singlets(log_dir + 'dict.txt', log_dir + 'dict.txt')
+# repeat_singlets(log_dir + 'dict.txt', log_dir + 'dict.txt')
 print("collecting keys...")
 substitute_and_write(log_dir + 'dict.txt', log_dir + 'dict.txt', key_dict)
 print("done")
