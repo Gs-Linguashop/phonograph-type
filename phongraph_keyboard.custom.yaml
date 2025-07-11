@@ -71,7 +71,7 @@ keyboards:
                 char: e
             width:
               percentage: 0.1
-            label: 水
+            label: 王
             swipe:
               - action:
                   character:
@@ -102,7 +102,7 @@ keyboards:
                 char: r
             width:
               percentage: 0.1
-            label: 人
+            label: 夕
             swipe:
               - action:
                   character:
@@ -133,7 +133,7 @@ keyboards:
                 char: t
             width:
               percentage: 0.1
-            label: 卩
+            label: 也
             swipe:
               - action:
                   character:
@@ -164,7 +164,7 @@ keyboards:
                 char: y
             width:
               percentage: 0.1
-            label: 身
+            label: 木
             swipe:
               - action:
                   character:
@@ -195,7 +195,7 @@ keyboards:
                 char: u
             width:
               percentage: 0.1
-            label: 又
+            label: 屮
             swipe:
               - action:
                   character:
@@ -257,7 +257,7 @@ keyboards:
                 char: o
             width:
               percentage: 0.1
-            label: 夕
+            label: 二
             swipe:
               - action:
                   character:
@@ -288,7 +288,7 @@ keyboards:
                 char: p
             width:
               percentage: 0.1
-            label: 止
+            label: 三
             swipe:
               - action:
                   character:
@@ -323,7 +323,7 @@ keyboards:
                 char: a
             width:
               percentage: 0.1
-            label: 二
+            label: 犬
             swipe:
               - action:
                   character:
@@ -342,7 +342,7 @@ keyboards:
                 char: s
             width:
               percentage: 0.1
-            label: 三
+            label: 水
             swipe:
               - action:
                   character:
@@ -361,7 +361,7 @@ keyboards:
                 char: d
             width:
               percentage: 0.1
-            label: 大
+            label: 勺
             swipe:
               - action:
                   character:
@@ -380,7 +380,7 @@ keyboards:
                 char: f
             width:
               percentage: 0.1
-            label: 勺
+            label: 口
             swipe:
               - action:
                   character:
@@ -399,7 +399,7 @@ keyboards:
                 char: g
             width:
               percentage: 0.1
-            label: 王
+            label: 田
             swipe:
               - action:
                   character:
@@ -430,7 +430,7 @@ keyboards:
                 char: h
             width:
               percentage: 0.1
-            label: 屮
+            label: 止
             swipe:
               - action:
                   character:
@@ -461,7 +461,7 @@ keyboards:
                 char: j
             width:
               percentage: 0.1
-            label: 田
+            label: 又
             swipe:
               - action:
                   character:
@@ -492,7 +492,7 @@ keyboards:
                 char: k
             width:
               percentage: 0.1
-            label: 口
+            label: 山
             swipe:
               - action:
                   character:
@@ -523,7 +523,7 @@ keyboards:
                 char: l
             width:
               percentage: 0.1
-            label: 豸
+            label: 皿
             swipe:
               - action:
                   character:
@@ -569,7 +569,7 @@ keyboards:
                 char: z
             width:
               percentage: 0.1
-            label: 車
+            label: 目
             swipe:
               - action:
                   character:
@@ -588,7 +588,7 @@ keyboards:
                 char: x
             width:
               percentage: 0.1
-            label: 幺
+            label: 大
             swipe:
               - action:
                   character:
@@ -607,7 +607,7 @@ keyboards:
                 char: c
             width:
               percentage: 0.1
-            label: 入
+            label: 人
             swipe:
               - action:
                   character:
@@ -626,7 +626,7 @@ keyboards:
                 char: v
             width:
               percentage: 0.1
-            label: 皿
+            label: 卩
             swipe:
               - action:
                   character:
@@ -651,7 +651,7 @@ keyboards:
                 char: b
             width:
               percentage: 0.1
-            label: 木
+            label: 不
             swipe:
               - action:
                   character:
@@ -676,7 +676,7 @@ keyboards:
                 char: n
             width:
               percentage: 0.1
-            label: 土
+            label: 入
             swipe:
               - action:
                   character:
